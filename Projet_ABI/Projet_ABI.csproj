@@ -47,8 +47,14 @@
   <ItemGroup>
     <Compile Include="Client.cs" />
     <Compile Include="Contact.cs" />
+    <Compile Include="FrmNewClient.Designer.cs">
+      <DependentUpon>FrmNewClient.cs</DependentUpon>
+    </Compile>
     <Compile Include="MyGroupBox.cs">
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FrmNewClient.cs">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmModifClient.cs">
       <SubType>Form</SubType>
@@ -60,6 +66,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmModifClient.resx">
       <DependentUpon>frmModifClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNewClient.resx">
+      <DependentUpon>FrmNewClient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

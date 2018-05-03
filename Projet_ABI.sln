@@ -5,6 +5,13 @@ VisualStudioVersion = 15.0.27428.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projet_ABI", "Projet_ABI\Projet_ABI.csproj", "{AF6CF60B-45C0-47D5-899F-FFDC823B3117}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BA90B4FD-90D9-41BA-9370-BFD8692DF3E6}"
+	ProjectSection(SolutionItems) = preProject
+		..\NouveauxClient\NouveauxClient\FrmNewClient.cs = ..\NouveauxClient\NouveauxClient\FrmNewClient.cs
+		..\NouveauxClient\NouveauxClient\FrmNewClient.Designer.cs = ..\NouveauxClient\NouveauxClient\FrmNewClient.Designer.cs
+		..\NouveauxClient\NouveauxClient\FrmNewClient.resx = ..\NouveauxClient\NouveauxClient\FrmNewClient.resx
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
