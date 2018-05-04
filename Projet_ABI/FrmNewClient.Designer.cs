@@ -95,6 +95,7 @@
             // 
             // txbCodePostal
             // 
+            this.txbCodePostal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txbCodePostal.Location = new System.Drawing.Point(96, 116);
             this.txbCodePostal.Name = "txbCodePostal";
             this.txbCodePostal.Size = new System.Drawing.Size(59, 20);
@@ -102,6 +103,7 @@
             // 
             // txbAdresse2
             // 
+            this.txbAdresse2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txbAdresse2.Location = new System.Drawing.Point(96, 90);
             this.txbAdresse2.Name = "txbAdresse2";
             this.txbAdresse2.Size = new System.Drawing.Size(247, 20);
@@ -109,6 +111,7 @@
             // 
             // txbAdresse1
             // 
+            this.txbAdresse1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txbAdresse1.Location = new System.Drawing.Point(96, 64);
             this.txbAdresse1.Name = "txbAdresse1";
             this.txbAdresse1.Size = new System.Drawing.Size(247, 20);
@@ -116,6 +119,7 @@
             // 
             // txbRaisonSociale
             // 
+            this.txbRaisonSociale.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txbRaisonSociale.Location = new System.Drawing.Point(96, 38);
             this.txbRaisonSociale.Name = "txbRaisonSociale";
             this.txbRaisonSociale.Size = new System.Drawing.Size(247, 20);
@@ -123,6 +127,7 @@
             // 
             // txbNumeroClient
             // 
+            this.txbNumeroClient.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txbNumeroClient.Location = new System.Drawing.Point(96, 12);
             this.txbNumeroClient.Name = "txbNumeroClient";
             this.txbNumeroClient.Size = new System.Drawing.Size(71, 20);
@@ -186,7 +191,7 @@
             this.gbxCaracteristiques.Controls.Add(this.chkbPrive);
             this.gbxCaracteristiques.Location = new System.Drawing.Point(12, 214);
             this.gbxCaracteristiques.Name = "gbxCaracteristiques";
-            this.gbxCaracteristiques.Size = new System.Drawing.Size(436, 145);
+            this.gbxCaracteristiques.Size = new System.Drawing.Size(436, 108);
             this.gbxCaracteristiques.TabIndex = 1;
             this.gbxCaracteristiques.TabStop = false;
             this.gbxCaracteristiques.Text = "Caractéristiques";
@@ -214,7 +219,8 @@
             // 
             // txbChiffreAffaire
             // 
-            this.txbChiffreAffaire.Location = new System.Drawing.Point(241, 36);
+            this.txbChiffreAffaire.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txbChiffreAffaire.Location = new System.Drawing.Point(241, 40);
             this.txbChiffreAffaire.Name = "txbChiffreAffaire";
             this.txbChiffreAffaire.Size = new System.Drawing.Size(100, 20);
             this.txbChiffreAffaire.TabIndex = 6;
@@ -242,6 +248,7 @@
             // 
             // txbEffectif
             // 
+            this.txbEffectif.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txbEffectif.Location = new System.Drawing.Point(55, 40);
             this.txbEffectif.Name = "txbEffectif";
             this.txbEffectif.Size = new System.Drawing.Size(100, 20);
@@ -277,7 +284,7 @@
             // 
             // btnOK
             // 
-            this.btnOK.Location = new System.Drawing.Point(251, 386);
+            this.btnOK.Location = new System.Drawing.Point(283, 328);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(35, 23);
             this.btnOK.TabIndex = 2;
@@ -286,7 +293,7 @@
             // 
             // btnContact
             // 
-            this.btnContact.Location = new System.Drawing.Point(303, 386);
+            this.btnContact.Location = new System.Drawing.Point(324, 328);
             this.btnContact.Name = "btnContact";
             this.btnContact.Size = new System.Drawing.Size(58, 23);
             this.btnContact.TabIndex = 3;
@@ -295,7 +302,7 @@
             // 
             // btnAnnuler
             // 
-            this.btnAnnuler.Location = new System.Drawing.Point(378, 386);
+            this.btnAnnuler.Location = new System.Drawing.Point(388, 328);
             this.btnAnnuler.Name = "btnAnnuler";
             this.btnAnnuler.Size = new System.Drawing.Size(60, 23);
             this.btnAnnuler.TabIndex = 4;
