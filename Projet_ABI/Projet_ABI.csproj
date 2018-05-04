@@ -65,6 +65,12 @@
     <Compile Include="frmNewClient.Designer.cs">
       <DependentUpon>frmNewClient.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmNouveauContact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNouveauContact.Designer.cs">
+      <DependentUpon>frmNouveauContact.cs</DependentUpon>
+    </Compile>
     <Compile Include="MyGroupBox.cs">
       <SubType>Component</SubType>
     </Compile>
