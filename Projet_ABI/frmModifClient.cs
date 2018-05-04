@@ -50,6 +50,6 @@ namespace Projet_ABI
             //public Client cl1 = new Client(12,"12", "12", "12", "12", "12", "12");
         }
 
-       
+        
     }
 }

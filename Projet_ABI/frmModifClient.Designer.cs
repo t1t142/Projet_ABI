@@ -51,7 +51,7 @@
             this.txtAdresse2 = new System.Windows.Forms.TextBox();
             this.txtAdresse = new System.Windows.Forms.TextBox();
             this.txtRs = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblTelephone = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -59,13 +59,13 @@
             this.grpCaracteristiques = new System.Windows.Forms.GroupBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.chkbPrive = new System.Windows.Forms.CheckBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lblNature = new System.Windows.Forms.Label();
+            this.lblChiffreAffaire = new System.Windows.Forms.Label();
+            this.lblActivite = new System.Windows.Forms.Label();
+            this.lblEffectif = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.grpIdentification.SuspendLayout();
@@ -83,17 +83,17 @@
             this.grpIdentification.Controls.Add(this.txtAdresse2);
             this.grpIdentification.Controls.Add(this.txtAdresse);
             this.grpIdentification.Controls.Add(this.txtRs);
-            this.grpIdentification.Controls.Add(this.label5);
+            this.grpIdentification.Controls.Add(this.lblTelephone);
             this.grpIdentification.Controls.Add(this.label4);
             this.grpIdentification.Controls.Add(this.label3);
             this.grpIdentification.Controls.Add(this.label2);
             this.grpIdentification.Controls.Add(this.label1);
-            this.grpIdentification.Location = new System.Drawing.Point(55, 85);
+            this.grpIdentification.Location = new System.Drawing.Point(12, 12);
             this.grpIdentification.Name = "grpIdentification";
-            this.grpIdentification.Size = new System.Drawing.Size(690, 237);
+            this.grpIdentification.Size = new System.Drawing.Size(472, 237);
             this.grpIdentification.TabIndex = 0;
             this.grpIdentification.TabStop = false;
-            this.grpIdentification.Text = "grpIdentification";
+            this.grpIdentification.Text = "Identification";
             // 
             // label9
             // 
@@ -240,14 +240,14 @@
             this.txtRs.Size = new System.Drawing.Size(220, 20);
             this.txtRs.TabIndex = 5;
             // 
-            // label5
+            // lblTelephone
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(75, 188);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "label5";
+            this.lblTelephone.AutoSize = true;
+            this.lblTelephone.Location = new System.Drawing.Point(46, 188);
+            this.lblTelephone.Name = "lblTelephone";
+            this.lblTelephone.Size = new System.Drawing.Size(64, 13);
+            this.lblTelephone.TabIndex = 4;
+            this.lblTelephone.Text = "Téléphone :";
             // 
             // label4
             // 
@@ -289,48 +289,48 @@
             // 
             this.grpCaracteristiques.Controls.Add(this.textBox8);
             this.grpCaracteristiques.Controls.Add(this.textBox7);
-            this.grpCaracteristiques.Controls.Add(this.checkBox1);
+            this.grpCaracteristiques.Controls.Add(this.chkbPrive);
             this.grpCaracteristiques.Controls.Add(this.comboBox2);
             this.grpCaracteristiques.Controls.Add(this.comboBox1);
-            this.grpCaracteristiques.Controls.Add(this.label10);
-            this.grpCaracteristiques.Controls.Add(this.label8);
-            this.grpCaracteristiques.Controls.Add(this.label7);
-            this.grpCaracteristiques.Controls.Add(this.label6);
-            this.grpCaracteristiques.Location = new System.Drawing.Point(55, 337);
+            this.grpCaracteristiques.Controls.Add(this.lblNature);
+            this.grpCaracteristiques.Controls.Add(this.lblChiffreAffaire);
+            this.grpCaracteristiques.Controls.Add(this.lblActivite);
+            this.grpCaracteristiques.Controls.Add(this.lblEffectif);
+            this.grpCaracteristiques.Location = new System.Drawing.Point(12, 255);
             this.grpCaracteristiques.Name = "grpCaracteristiques";
-            this.grpCaracteristiques.Size = new System.Drawing.Size(690, 127);
+            this.grpCaracteristiques.Size = new System.Drawing.Size(472, 127);
             this.grpCaracteristiques.TabIndex = 1;
             this.grpCaracteristiques.TabStop = false;
-            this.grpCaracteristiques.Text = "grpCaracteristiques";
+            this.grpCaracteristiques.Text = "Caracteristiques";
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(372, 54);
+            this.textBox8.Location = new System.Drawing.Point(283, 54);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(121, 20);
             this.textBox8.TabIndex = 13;
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(116, 57);
+            this.textBox7.Location = new System.Drawing.Point(100, 54);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(121, 20);
             this.textBox7.TabIndex = 12;
             // 
-            // checkBox1
+            // chkbPrive
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(16, 28);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(80, 17);
-            this.checkBox1.TabIndex = 11;
-            this.checkBox1.Text = "checkBox1";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.chkbPrive.AutoSize = true;
+            this.chkbPrive.Location = new System.Drawing.Point(16, 28);
+            this.chkbPrive.Name = "chkbPrive";
+            this.chkbPrive.Size = new System.Drawing.Size(50, 17);
+            this.chkbPrive.TabIndex = 11;
+            this.chkbPrive.Text = "Privé";
+            this.chkbPrive.UseVisualStyleBackColor = true;
             // 
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(372, 96);
+            this.comboBox2.Location = new System.Drawing.Point(283, 91);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(121, 21);
             this.comboBox2.TabIndex = 10;
@@ -338,50 +338,50 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(116, 93);
+            this.comboBox1.Location = new System.Drawing.Point(100, 90);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 9;
             // 
-            // label10
+            // lblNature
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(325, 96);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(41, 13);
-            this.label10.TabIndex = 8;
-            this.label10.Text = "label10";
+            this.lblNature.AutoSize = true;
+            this.lblNature.Location = new System.Drawing.Point(232, 94);
+            this.lblNature.Name = "lblNature";
+            this.lblNature.Size = new System.Drawing.Size(45, 13);
+            this.lblNature.TabIndex = 8;
+            this.lblNature.Text = "Nature :";
             // 
-            // label8
+            // lblChiffreAffaire
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(325, 57);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(35, 13);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "label8";
+            this.lblChiffreAffaire.AutoSize = true;
+            this.lblChiffreAffaire.Location = new System.Drawing.Point(250, 57);
+            this.lblChiffreAffaire.Name = "lblChiffreAffaire";
+            this.lblChiffreAffaire.Size = new System.Drawing.Size(27, 13);
+            this.lblChiffreAffaire.TabIndex = 7;
+            this.lblChiffreAffaire.Text = "CA :";
             // 
-            // label7
+            // lblActivite
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(50, 96);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(35, 13);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "label7";
+            this.lblActivite.AutoSize = true;
+            this.lblActivite.Location = new System.Drawing.Point(46, 93);
+            this.lblActivite.Name = "lblActivite";
+            this.lblActivite.Size = new System.Drawing.Size(48, 13);
+            this.lblActivite.TabIndex = 6;
+            this.lblActivite.Text = "Activité :";
             // 
-            // label6
+            // lblEffectif
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(50, 57);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 13);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "label6";
+            this.lblEffectif.AutoSize = true;
+            this.lblEffectif.Location = new System.Drawing.Point(50, 57);
+            this.lblEffectif.Name = "lblEffectif";
+            this.lblEffectif.Size = new System.Drawing.Size(46, 13);
+            this.lblEffectif.TabIndex = 5;
+            this.lblEffectif.Text = "Effectif :";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(870, 461);
+            this.button1.Location = new System.Drawing.Point(328, 388);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 2;
@@ -391,7 +391,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(762, 461);
+            this.button2.Location = new System.Drawing.Point(409, 388);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 3;
@@ -402,14 +402,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(992, 496);
+            this.ClientSize = new System.Drawing.Size(583, 482);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.grpCaracteristiques);
             this.Controls.Add(this.grpIdentification);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "frmModifClient";
-            this.Text = "Form1";
+            this.Text = "Modification Client";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.grpIdentification.ResumeLayout(false);
             this.grpIdentification.PerformLayout();
@@ -430,22 +430,22 @@
         private System.Windows.Forms.TextBox txtAdresse2;
         private System.Windows.Forms.TextBox txtAdresse;
         private System.Windows.Forms.TextBox txtRs;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblTelephone;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox grpCaracteristiques;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblChiffreAffaire;
+        private System.Windows.Forms.Label lblActivite;
+        private System.Windows.Forms.Label lblEffectif;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox chkbPrive;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label lblNature;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.GroupBox groupBox3;
