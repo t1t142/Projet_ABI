@@ -1,6 +1,6 @@
-﻿namespace NouveauxClient
+﻿namespace Projet_ABI
 {
-    partial class FrmNewClient
+    partial class frmNewClient
     {
         /// <summary>
         /// Variable nécessaire au concepteur.
@@ -42,7 +42,6 @@
             this.lblRaisonSociale = new System.Windows.Forms.Label();
             this.lblNumeroClient = new System.Windows.Forms.Label();
             this.gbxCaracteristiques = new System.Windows.Forms.GroupBox();
-            this.chkbPublic = new System.Windows.Forms.CheckBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.lblNature = new System.Windows.Forms.Label();
             this.txbChiffreAffaire = new System.Windows.Forms.TextBox();
@@ -75,7 +74,7 @@
             this.gbxIdentification.Controls.Add(this.lblNumeroClient);
             this.gbxIdentification.Location = new System.Drawing.Point(12, 12);
             this.gbxIdentification.Name = "gbxIdentification";
-            this.gbxIdentification.Size = new System.Drawing.Size(349, 169);
+            this.gbxIdentification.Size = new System.Drawing.Size(436, 186);
             this.gbxIdentification.TabIndex = 0;
             this.gbxIdentification.TabStop = false;
             this.gbxIdentification.Text = "Identification";
@@ -176,7 +175,6 @@
             // 
             // gbxCaracteristiques
             // 
-            this.gbxCaracteristiques.Controls.Add(this.chkbPublic);
             this.gbxCaracteristiques.Controls.Add(this.comboBox1);
             this.gbxCaracteristiques.Controls.Add(this.lblNature);
             this.gbxCaracteristiques.Controls.Add(this.txbChiffreAffaire);
@@ -186,23 +184,12 @@
             this.gbxCaracteristiques.Controls.Add(this.lblActivite);
             this.gbxCaracteristiques.Controls.Add(this.lblEffectif);
             this.gbxCaracteristiques.Controls.Add(this.chkbPrive);
-            this.gbxCaracteristiques.Location = new System.Drawing.Point(12, 187);
+            this.gbxCaracteristiques.Location = new System.Drawing.Point(12, 214);
             this.gbxCaracteristiques.Name = "gbxCaracteristiques";
-            this.gbxCaracteristiques.Size = new System.Drawing.Size(349, 131);
+            this.gbxCaracteristiques.Size = new System.Drawing.Size(436, 145);
             this.gbxCaracteristiques.TabIndex = 1;
             this.gbxCaracteristiques.TabStop = false;
             this.gbxCaracteristiques.Text = "Caractéristiques";
-            this.gbxCaracteristiques.Enter += new System.EventHandler(this.gbxCaracteristiques_Enter);
-            // 
-            // chkbPublic
-            // 
-            this.chkbPublic.AutoSize = true;
-            this.chkbPublic.Location = new System.Drawing.Point(87, 19);
-            this.chkbPublic.Name = "chkbPublic";
-            this.chkbPublic.Size = new System.Drawing.Size(55, 17);
-            this.chkbPublic.TabIndex = 9;
-            this.chkbPublic.Text = "Public";
-            this.chkbPublic.UseVisualStyleBackColor = true;
             // 
             // comboBox1
             // 
@@ -211,15 +198,15 @@
             "Principale",
             "Secondaire",
             "Ancienne"});
-            this.comboBox1.Location = new System.Drawing.Point(214, 67);
+            this.comboBox1.Location = new System.Drawing.Point(241, 67);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(84, 21);
+            this.comboBox1.Size = new System.Drawing.Size(100, 21);
             this.comboBox1.TabIndex = 8;
             // 
             // lblNature
             // 
             this.lblNature.AutoSize = true;
-            this.lblNature.Location = new System.Drawing.Point(163, 70);
+            this.lblNature.Location = new System.Drawing.Point(190, 70);
             this.lblNature.Name = "lblNature";
             this.lblNature.Size = new System.Drawing.Size(45, 13);
             this.lblNature.TabIndex = 7;
@@ -227,7 +214,7 @@
             // 
             // txbChiffreAffaire
             // 
-            this.txbChiffreAffaire.Location = new System.Drawing.Point(184, 40);
+            this.txbChiffreAffaire.Location = new System.Drawing.Point(241, 36);
             this.txbChiffreAffaire.Name = "txbChiffreAffaire";
             this.txbChiffreAffaire.Size = new System.Drawing.Size(100, 20);
             this.txbChiffreAffaire.TabIndex = 6;
@@ -235,7 +222,7 @@
             // lblChiffreAffaire
             // 
             this.lblChiffreAffaire.AutoSize = true;
-            this.lblChiffreAffaire.Location = new System.Drawing.Point(154, 43);
+            this.lblChiffreAffaire.Location = new System.Drawing.Point(208, 43);
             this.lblChiffreAffaire.Name = "lblChiffreAffaire";
             this.lblChiffreAffaire.Size = new System.Drawing.Size(27, 13);
             this.lblChiffreAffaire.TabIndex = 5;
@@ -257,7 +244,7 @@
             // 
             this.txbEffectif.Location = new System.Drawing.Point(55, 40);
             this.txbEffectif.Name = "txbEffectif";
-            this.txbEffectif.Size = new System.Drawing.Size(76, 20);
+            this.txbEffectif.Size = new System.Drawing.Size(100, 20);
             this.txbEffectif.TabIndex = 3;
             // 
             // lblActivite
@@ -290,17 +277,16 @@
             // 
             // btnOK
             // 
-            this.btnOK.Location = new System.Drawing.Point(196, 324);
+            this.btnOK.Location = new System.Drawing.Point(251, 386);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(35, 23);
             this.btnOK.TabIndex = 2;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
-            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // btnContact
             // 
-            this.btnContact.Location = new System.Drawing.Point(237, 324);
+            this.btnContact.Location = new System.Drawing.Point(303, 386);
             this.btnContact.Name = "btnContact";
             this.btnContact.Size = new System.Drawing.Size(58, 23);
             this.btnContact.TabIndex = 3;
@@ -309,24 +295,24 @@
             // 
             // btnAnnuler
             // 
-            this.btnAnnuler.Location = new System.Drawing.Point(301, 324);
+            this.btnAnnuler.Location = new System.Drawing.Point(378, 386);
             this.btnAnnuler.Name = "btnAnnuler";
             this.btnAnnuler.Size = new System.Drawing.Size(60, 23);
             this.btnAnnuler.TabIndex = 4;
             this.btnAnnuler.Text = "Annuler";
             this.btnAnnuler.UseVisualStyleBackColor = true;
             // 
-            // FrmNewClient
+            // frmNewClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(369, 354);
+            this.ClientSize = new System.Drawing.Size(538, 439);
             this.Controls.Add(this.btnAnnuler);
             this.Controls.Add(this.btnContact);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.gbxCaracteristiques);
             this.Controls.Add(this.gbxIdentification);
-            this.Name = "FrmNewClient";
+            this.Name = "frmNewClient";
             this.Text = "Saisie nouveau client";
             this.gbxIdentification.ResumeLayout(false);
             this.gbxIdentification.PerformLayout();
@@ -361,10 +347,8 @@
         private System.Windows.Forms.CheckBox chkbPrive;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label lblNature;
-        private System.Windows.Forms.CheckBox chkbPublic;
         private System.Windows.Forms.Button btnOK;
         private System.Windows.Forms.Button btnContact;
         private System.Windows.Forms.Button btnAnnuler;
     }
 }
-

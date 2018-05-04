@@ -58,28 +58,26 @@
             this.label6 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
             this.grpIdentification.SuspendLayout();
             this.grpCaracteristiques.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // grpIdentification
             // 
             this.grpIdentification.Controls.Add(this.label9);
             this.grpIdentification.Controls.Add(this.txtTel);
+            this.grpIdentification.Controls.Add(this.groupBox3);
             this.grpIdentification.Controls.Add(this.txtVille);
             this.grpIdentification.Controls.Add(this.txtCp);
             this.grpIdentification.Controls.Add(this.txtAdresse2);
@@ -90,7 +88,7 @@
             this.grpIdentification.Controls.Add(this.label3);
             this.grpIdentification.Controls.Add(this.label2);
             this.grpIdentification.Controls.Add(this.label1);
-            this.grpIdentification.Location = new System.Drawing.Point(39, 22);
+            this.grpIdentification.Location = new System.Drawing.Point(55, 85);
             this.grpIdentification.Name = "grpIdentification";
             this.grpIdentification.Size = new System.Drawing.Size(690, 237);
             this.grpIdentification.TabIndex = 0;
@@ -204,7 +202,7 @@
             this.grpCaracteristiques.Controls.Add(this.label8);
             this.grpCaracteristiques.Controls.Add(this.label7);
             this.grpCaracteristiques.Controls.Add(this.label6);
-            this.grpCaracteristiques.Location = new System.Drawing.Point(39, 282);
+            this.grpCaracteristiques.Location = new System.Drawing.Point(55, 337);
             this.grpCaracteristiques.Name = "grpCaracteristiques";
             this.grpCaracteristiques.Size = new System.Drawing.Size(690, 127);
             this.grpCaracteristiques.TabIndex = 1;
@@ -289,7 +287,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(598, 415);
+            this.button1.Location = new System.Drawing.Point(870, 461);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 2;
@@ -299,151 +297,126 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(699, 415);
+            this.button2.Location = new System.Drawing.Point(762, 461);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 3;
             this.button2.Text = "Annuler";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // groupBox1
+            // groupBox3
             // 
-            this.groupBox1.Controls.Add(this.label11);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.textBox6);
-            this.groupBox1.Controls.Add(this.label12);
-            this.groupBox1.Controls.Add(this.label13);
-            this.groupBox1.Controls.Add(this.label14);
-            this.groupBox1.Controls.Add(this.label15);
-            this.groupBox1.Controls.Add(this.label16);
-            this.groupBox1.Location = new System.Drawing.Point(39, 22);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(690, 237);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "grpIdentification";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            this.groupBox3.Controls.Add(this.textBox15);
+            this.groupBox3.Controls.Add(this.textBox16);
+            this.groupBox3.Controls.Add(this.checkBox2);
+            this.groupBox3.Controls.Add(this.comboBox3);
+            this.groupBox3.Controls.Add(this.comboBox4);
+            this.groupBox3.Controls.Add(this.label23);
+            this.groupBox3.Controls.Add(this.label24);
+            this.groupBox3.Controls.Add(this.label25);
+            this.groupBox3.Controls.Add(this.label26);
+            this.groupBox3.Location = new System.Drawing.Point(40, 305);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(690, 127);
+            this.groupBox3.TabIndex = 1;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "grpCaracteristiques";
             // 
-            // label11
+            // textBox15
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(113, 29);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(35, 13);
-            this.label11.TabIndex = 11;
-            this.label11.Text = "label9";
+            this.textBox15.Location = new System.Drawing.Point(372, 54);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(121, 20);
+            this.textBox15.TabIndex = 13;
             // 
-            // textBox1
+            // textBox16
             // 
-            this.textBox1.Location = new System.Drawing.Point(116, 187);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(220, 20);
-            this.textBox1.TabIndex = 10;
+            this.textBox16.Location = new System.Drawing.Point(116, 57);
+            this.textBox16.Name = "textBox16";
+            this.textBox16.Size = new System.Drawing.Size(121, 20);
+            this.textBox16.TabIndex = 12;
             // 
-            // textBox2
+            // checkBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(116, 151);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(58, 20);
-            this.textBox2.TabIndex = 9;
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(16, 28);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(80, 17);
+            this.checkBox2.TabIndex = 11;
+            this.checkBox2.Text = "checkBox1";
+            this.checkBox2.UseVisualStyleBackColor = true;
             // 
-            // textBox3
+            // comboBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(180, 151);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(156, 20);
-            this.textBox3.TabIndex = 8;
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(372, 96);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(121, 21);
+            this.comboBox3.TabIndex = 10;
             // 
-            // textBox4
+            // comboBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(116, 123);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(220, 20);
-            this.textBox4.TabIndex = 7;
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Location = new System.Drawing.Point(116, 93);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(121, 21);
+            this.comboBox4.TabIndex = 9;
             // 
-            // textBox5
+            // label23
             // 
-            this.textBox5.Location = new System.Drawing.Point(116, 97);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(220, 20);
-            this.textBox5.TabIndex = 6;
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(325, 96);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(41, 13);
+            this.label23.TabIndex = 8;
+            this.label23.Text = "label10";
             // 
-            // textBox6
+            // label24
             // 
-            this.textBox6.Location = new System.Drawing.Point(116, 64);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(220, 20);
-            this.textBox6.TabIndex = 5;
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(325, 57);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(35, 13);
+            this.label24.TabIndex = 7;
+            this.label24.Text = "label8";
             // 
-            // label12
+            // label25
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(64, 185);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(35, 13);
-            this.label12.TabIndex = 4;
-            this.label12.Text = "label5";
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(50, 96);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(35, 13);
+            this.label25.TabIndex = 6;
+            this.label25.Text = "label7";
             // 
-            // label13
+            // label26
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(51, 151);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(49, 13);
-            this.label13.TabIndex = 3;
-            this.label13.Text = "CP & Ville:";
-            this.label13.Click += new System.EventHandler(this.label13_Click);
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(51, 100);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(48, 13);
-            this.label14.TabIndex = 2;
-            this.label14.Text = "Adresse:";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(18, 64);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(81, 13);
-            this.label15.TabIndex = 1;
-            this.label15.Text = "Raison Sociale:";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(23, 29);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(76, 13);
-            this.label16.TabIndex = 0;
-            this.label16.Text = "Numéro Client:";
-            this.label16.Click += new System.EventHandler(this.label16_Click);
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(50, 57);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(35, 13);
+            this.label26.TabIndex = 5;
+            this.label26.Text = "label6";
             // 
             // frmModifClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(992, 496);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.grpCaracteristiques);
-            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.grpIdentification);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmModifClient";
             this.Text = "Form1";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.grpIdentification.ResumeLayout(false);
             this.grpIdentification.PerformLayout();
             this.grpCaracteristiques.ResumeLayout(false);
             this.grpCaracteristiques.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -475,19 +448,16 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label26;
     }
 }
 

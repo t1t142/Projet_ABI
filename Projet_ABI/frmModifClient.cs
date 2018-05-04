@@ -14,23 +14,23 @@ namespace Projet_ABI
     {
 
 
-       
+
 
         public frmModifClient()
         {
 
-            
 
 
 
 
 
-        InitializeComponent();
-           // comboBox1.Items.Add("Blue");
+
+            InitializeComponent();
+            // comboBox1.Items.Add("Blue");
             //comboBox1.Items.Add("red");
         }
-        
-        private void label16_Click(object sender, EventArgs e )
+
+        private void label16_Click(object sender, EventArgs e)
         {
 
         }
@@ -47,7 +47,7 @@ namespace Projet_ABI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            public Client cl1 = new Client(12,"12", "12", "12", "12", "12", "12");
+            //public Client cl1 = new Client(12,"12", "12", "12", "12", "12", "12");
         }
-    
+    }
 }

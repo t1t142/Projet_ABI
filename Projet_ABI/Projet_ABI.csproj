@@ -47,14 +47,26 @@
   <ItemGroup>
     <Compile Include="Client.cs" />
     <Compile Include="Contact.cs" />
-    <Compile Include="FrmNewClient.Designer.cs">
-      <DependentUpon>FrmNewClient.cs</DependentUpon>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultationClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultationClient.Designer.cs">
+      <DependentUpon>frmConsultationClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNewClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNewClient.Designer.cs">
+      <DependentUpon>frmNewClient.cs</DependentUpon>
     </Compile>
     <Compile Include="MyGroupBox.cs">
       <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="FrmNewClient.cs">
-      <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmModifClient.cs">
       <SubType>Form</SubType>
@@ -64,11 +76,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultationClient.resx">
+      <DependentUpon>frmConsultationClient.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmModifClient.resx">
       <DependentUpon>frmModifClient.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmNewClient.resx">
-      <DependentUpon>FrmNewClient.cs</DependentUpon>
+    <EmbeddedResource Include="frmNewClient.resx">
+      <DependentUpon>frmNewClient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

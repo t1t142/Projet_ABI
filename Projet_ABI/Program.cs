@@ -16,10 +16,10 @@ namespace Projet_ABI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmModifClient());
-
-
-
+            //Application.Run(new frmModifClient());
+            //Application.Run(new frmNewClient());
+            //Application.Run(new frmConsultationClient());
+            Application.Run(new Form1());
 
         }
     }
