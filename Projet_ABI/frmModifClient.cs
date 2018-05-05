@@ -49,5 +49,10 @@ namespace Projet_ABI
         {
             //public Client cl1 = new Client(12,"12", "12", "12", "12", "12", "12");
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

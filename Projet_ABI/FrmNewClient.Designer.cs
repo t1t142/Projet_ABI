@@ -1,4 +1,4 @@
-﻿namespace Projet_ABI
+﻿namespace NouveauxClient
 {
     partial class frmNewClient
     {
@@ -283,6 +283,7 @@
             this.btnOK.TabIndex = 2;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click_1);
             // 
             // btnContact
             // 
@@ -301,6 +302,7 @@
             this.btnAnnuler.TabIndex = 4;
             this.btnAnnuler.Text = "Annuler";
             this.btnAnnuler.UseVisualStyleBackColor = true;
+            this.btnAnnuler.Click += new System.EventHandler(this.btnAnnuler_Click);
             // 
             // frmNewClient
             // 
