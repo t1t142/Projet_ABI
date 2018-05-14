@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Projet_ABI
 {
-    class Contact
+   public class Contact
     {
 
         private int num;

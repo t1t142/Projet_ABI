@@ -78,6 +78,7 @@
             this.picClient.Size = new System.Drawing.Size(124, 99);
             this.picClient.TabIndex = 9;
             this.picClient.TabStop = false;
+           
             // 
             // txtEmail
             // 
@@ -208,6 +209,7 @@
             this.btnOK.TabIndex = 6;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
+           
             // 
             // btnAnnuler
             // 
@@ -218,6 +220,7 @@
             this.btnAnnuler.TabIndex = 7;
             this.btnAnnuler.Text = "Annuler";
             this.btnAnnuler.UseVisualStyleBackColor = true;
+            this.btnAnnuler.Click += new System.EventHandler(this.btnAnnuler_Click);
             // 
             // frmNouveauContact
             // 

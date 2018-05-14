@@ -46,8 +46,8 @@
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
-            this.txtVille = new System.Windows.Forms.TextBox();
             this.txtCp = new System.Windows.Forms.TextBox();
+            this.txtVille = new System.Windows.Forms.TextBox();
             this.txtAdresse2 = new System.Windows.Forms.TextBox();
             this.txtAdresse = new System.Windows.Forms.TextBox();
             this.txtRs = new System.Windows.Forms.TextBox();
@@ -66,8 +66,8 @@
             this.lblChiffreAffaire = new System.Windows.Forms.Label();
             this.lblActivite = new System.Windows.Forms.Label();
             this.lblEffectif = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnOk = new System.Windows.Forms.Button();
+            this.btnAnnuler = new System.Windows.Forms.Button();
             this.grpIdentification.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.grpCaracteristiques.SuspendLayout();
@@ -78,8 +78,8 @@
             this.grpIdentification.Controls.Add(this.label9);
             this.grpIdentification.Controls.Add(this.txtTel);
             this.grpIdentification.Controls.Add(this.groupBox3);
-            this.grpIdentification.Controls.Add(this.txtVille);
             this.grpIdentification.Controls.Add(this.txtCp);
+            this.grpIdentification.Controls.Add(this.txtVille);
             this.grpIdentification.Controls.Add(this.txtAdresse2);
             this.grpIdentification.Controls.Add(this.txtAdresse);
             this.grpIdentification.Controls.Add(this.txtRs);
@@ -205,19 +205,20 @@
             this.label26.TabIndex = 5;
             this.label26.Text = "label6";
             // 
-            // txtVille
-            // 
-            this.txtVille.Location = new System.Drawing.Point(116, 151);
-            this.txtVille.Name = "txtVille";
-            this.txtVille.Size = new System.Drawing.Size(58, 20);
-            this.txtVille.TabIndex = 9;
-            // 
             // txtCp
             // 
-            this.txtCp.Location = new System.Drawing.Point(180, 151);
+            this.txtCp.Location = new System.Drawing.Point(116, 151);
             this.txtCp.Name = "txtCp";
-            this.txtCp.Size = new System.Drawing.Size(156, 20);
-            this.txtCp.TabIndex = 8;
+            this.txtCp.Size = new System.Drawing.Size(58, 20);
+            this.txtCp.TabIndex = 9;
+            this.txtCp.TextChanged += new System.EventHandler(this.txtVille_TextChanged);
+            // 
+            // txtVille
+            // 
+            this.txtVille.Location = new System.Drawing.Point(180, 151);
+            this.txtVille.Name = "txtVille";
+            this.txtVille.Size = new System.Drawing.Size(156, 20);
+            this.txtVille.TabIndex = 8;
             // 
             // txtAdresse2
             // 
@@ -279,7 +280,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(34, 32);
+            this.label1.Location = new System.Drawing.Point(29, 32);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(76, 13);
             this.label1.TabIndex = 0;
@@ -379,38 +380,39 @@
             this.lblEffectif.TabIndex = 5;
             this.lblEffectif.Text = "Effectif :";
             // 
-            // button1
+            // btnOk
             // 
-            this.button1.Location = new System.Drawing.Point(328, 388);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Ok";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnOk.Location = new System.Drawing.Point(328, 388);
+            this.btnOk.Name = "btnOk";
+            this.btnOk.Size = new System.Drawing.Size(75, 23);
+            this.btnOk.TabIndex = 2;
+            this.btnOk.Text = "Ok";
+            this.btnOk.UseVisualStyleBackColor = true;
+            this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
             // 
-            // button2
+            // btnAnnuler
             // 
-            this.button2.Location = new System.Drawing.Point(409, 388);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Annuler";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnAnnuler.Location = new System.Drawing.Point(409, 388);
+            this.btnAnnuler.Name = "btnAnnuler";
+            this.btnAnnuler.Size = new System.Drawing.Size(75, 23);
+            this.btnAnnuler.TabIndex = 3;
+            this.btnAnnuler.Text = "Annuler";
+            this.btnAnnuler.UseVisualStyleBackColor = true;
+            this.btnAnnuler.Click += new System.EventHandler(this.btnAnnuler_Click);
             // 
             // frmModifClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(583, 482);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnAnnuler);
+            this.Controls.Add(this.btnOk);
             this.Controls.Add(this.grpCaracteristiques);
             this.Controls.Add(this.grpIdentification);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "frmModifClient";
             this.Text = "Modification Client";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frmModifClient_Load);
             this.grpIdentification.ResumeLayout(false);
             this.grpIdentification.PerformLayout();
             this.groupBox3.ResumeLayout(false);
@@ -425,8 +427,8 @@
 
         private System.Windows.Forms.GroupBox grpIdentification;
         private System.Windows.Forms.TextBox txtTel;
-        private System.Windows.Forms.TextBox txtVille;
         private System.Windows.Forms.TextBox txtCp;
+        private System.Windows.Forms.TextBox txtVille;
         private System.Windows.Forms.TextBox txtAdresse2;
         private System.Windows.Forms.TextBox txtAdresse;
         private System.Windows.Forms.TextBox txtRs;
@@ -439,8 +441,8 @@
         private System.Windows.Forms.Label lblChiffreAffaire;
         private System.Windows.Forms.Label lblActivite;
         private System.Windows.Forms.Label lblEffectif;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnOk;
+        private System.Windows.Forms.Button btnAnnuler;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.CheckBox chkbPrive;
         private System.Windows.Forms.ComboBox comboBox2;

@@ -6,7 +6,7 @@
         /// Variable nécessaire au concepteur.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
-
+       
         /// <summary>
         /// Nettoyage des ressources utilisées.
         /// </summary>
@@ -29,8 +29,9 @@
         private void InitializeComponent()
         {
             this.grpIdentification = new System.Windows.Forms.GroupBox();
+            this.lblSaisieCp = new System.Windows.Forms.Label();
             this.lblSaisieTelephone = new System.Windows.Forms.Label();
-            this.lblSaisieCPVille = new System.Windows.Forms.Label();
+            this.lblSaisieVille = new System.Windows.Forms.Label();
             this.lblSaisieAdresse = new System.Windows.Forms.Label();
             this.lblSaisieRaisonSociale = new System.Windows.Forms.Label();
             this.lblSaisieNumeroClient = new System.Windows.Forms.Label();
@@ -67,8 +68,9 @@
             // 
             // grpIdentification
             // 
+            this.grpIdentification.Controls.Add(this.lblSaisieCp);
             this.grpIdentification.Controls.Add(this.lblSaisieTelephone);
-            this.grpIdentification.Controls.Add(this.lblSaisieCPVille);
+            this.grpIdentification.Controls.Add(this.lblSaisieVille);
             this.grpIdentification.Controls.Add(this.lblSaisieAdresse);
             this.grpIdentification.Controls.Add(this.lblSaisieRaisonSociale);
             this.grpIdentification.Controls.Add(this.lblSaisieNumeroClient);
@@ -86,6 +88,14 @@
             this.grpIdentification.TabIndex = 0;
             this.grpIdentification.TabStop = false;
             // 
+            // lblSaisieCp
+            // 
+            this.lblSaisieCp.Location = new System.Drawing.Point(79, 135);
+            this.lblSaisieCp.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblSaisieCp.Name = "lblSaisieCp";
+            this.lblSaisieCp.Size = new System.Drawing.Size(79, 15);
+            this.lblSaisieCp.TabIndex = 16;
+            // 
             // lblSaisieTelephone
             // 
             this.lblSaisieTelephone.Location = new System.Drawing.Point(129, 168);
@@ -94,13 +104,13 @@
             this.lblSaisieTelephone.Size = new System.Drawing.Size(316, 15);
             this.lblSaisieTelephone.TabIndex = 15;
             // 
-            // lblSaisieCPVille
+            // lblSaisieVille
             // 
-            this.lblSaisieCPVille.Location = new System.Drawing.Point(129, 135);
-            this.lblSaisieCPVille.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblSaisieCPVille.Name = "lblSaisieCPVille";
-            this.lblSaisieCPVille.Size = new System.Drawing.Size(316, 15);
-            this.lblSaisieCPVille.TabIndex = 14;
+            this.lblSaisieVille.Location = new System.Drawing.Point(188, 135);
+            this.lblSaisieVille.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblSaisieVille.Name = "lblSaisieVille";
+            this.lblSaisieVille.Size = new System.Drawing.Size(316, 15);
+            this.lblSaisieVille.TabIndex = 14;
             // 
             // lblSaisieAdresse
             // 
@@ -308,6 +318,7 @@
             this.btnModifierClient.TabIndex = 3;
             this.btnModifierClient.Text = "Modifier Client";
             this.btnModifierClient.UseVisualStyleBackColor = true;
+            this.btnModifierClient.Click += new System.EventHandler(this.btnModifierClient_Click);
             // 
             // btnNouveauContact
             // 
@@ -318,6 +329,7 @@
             this.btnNouveauContact.TabIndex = 4;
             this.btnNouveauContact.Text = "Nouveau Contact";
             this.btnNouveauContact.UseVisualStyleBackColor = true;
+            this.btnNouveauContact.Click += new System.EventHandler(this.btnNouveauContact_Click);
             // 
             // btnFermer
             // 
@@ -328,6 +340,7 @@
             this.btnFermer.TabIndex = 5;
             this.btnFermer.Text = "Fermer";
             this.btnFermer.UseVisualStyleBackColor = true;
+            this.btnFermer.Click += new System.EventHandler(this.btnFermer_Click);
             // 
             // dgvContact
             // 
@@ -344,7 +357,6 @@
             this.dgvContact.RowTemplate.Height = 28;
             this.dgvContact.Size = new System.Drawing.Size(523, 110);
             this.dgvContact.TabIndex = 6;
-            this.dgvContact.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvContact_CellContentClick);
             // 
             // clnDGNom
             // 
@@ -386,7 +398,6 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmConsultationClient";
             this.Text = "Consultation Client";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmConsultationClient_Load);
             this.grpIdentification.ResumeLayout(false);
             this.grpIdentification.PerformLayout();
@@ -414,9 +425,9 @@
         private System.Windows.Forms.Label lblActivite;
         private System.Windows.Forms.Label lblEffectif;
         private System.Windows.Forms.Label lblCaracteristiques;
-        private System.Windows.Forms.Button btnModifierClient;
+        public System.Windows.Forms.Button btnModifierClient;
         private System.Windows.Forms.Button btnNouveauContact;
-        private System.Windows.Forms.Button btnFermer;
+        public System.Windows.Forms.Button btnFermer;
         private System.Windows.Forms.DataGridView dgvContact;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnDGNom;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnDGPrenom;
@@ -424,12 +435,14 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn clnEmail;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnFonction;
         private System.Windows.Forms.Label lblSaisieTelephone;
-        private System.Windows.Forms.Label lblSaisieCPVille;
+        private System.Windows.Forms.Label lblSaisieVille;
         private System.Windows.Forms.Label lblSaisieAdresse;
         private System.Windows.Forms.Label lblSaisieRaisonSociale;
         private System.Windows.Forms.Label lblSaisieNature;
         private System.Windows.Forms.Label lblSasieCA;
         private System.Windows.Forms.Label lblSasieActivite;
         private System.Windows.Forms.Label lblSasieEffectif;
+        private System.Windows.Forms.Label lblSaisieCp;
+        //private Client leClient;
     }
 }

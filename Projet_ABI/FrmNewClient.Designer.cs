@@ -290,6 +290,7 @@
             this.btnOK.TabIndex = 2;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // btnContact
             // 
@@ -299,6 +300,7 @@
             this.btnContact.TabIndex = 3;
             this.btnContact.Text = "Contacts";
             this.btnContact.UseVisualStyleBackColor = true;
+            this.btnContact.Click += new System.EventHandler(this.btnContact_Click);
             // 
             // btnAnnuler
             // 
@@ -308,6 +310,7 @@
             this.btnAnnuler.TabIndex = 4;
             this.btnAnnuler.Text = "Annuler";
             this.btnAnnuler.UseVisualStyleBackColor = true;
+            this.btnAnnuler.Click += new System.EventHandler(this.btnAnnuler_Click);
             // 
             // frmNewClient
             // 
@@ -321,6 +324,7 @@
             this.Controls.Add(this.gbxIdentification);
             this.Name = "frmNewClient";
             this.Text = "Saisie nouveau client";
+            this.Load += new System.EventHandler(this.frmNewClient_Load);
             this.gbxIdentification.ResumeLayout(false);
             this.gbxIdentification.PerformLayout();
             this.gbxCaracteristiques.ResumeLayout(false);

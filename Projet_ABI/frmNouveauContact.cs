@@ -12,11 +12,25 @@ namespace Projet_ABI
 {
     public partial class frmNouveauContact : Form
     {
+
+       
+
         public frmNouveauContact()
         {
             InitializeComponent();
         }
 
-        
+        private void btnAnnuler_Click(object sender, EventArgs e)
+        {
+
+           
+            this.Close();
+
+
+        }
+
+       
+
+    
     }
 }

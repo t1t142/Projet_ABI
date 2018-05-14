@@ -47,11 +47,18 @@
   <ItemGroup>
     <Compile Include="Client.cs" />
     <Compile Include="Contact.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="Donnees.cs" />
+    <Compile Include="frmlistClient.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="frmlistClient.Designer.cs">
+      <DependentUpon>frmlistClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="frmConsultationClient.cs">
       <SubType>Form</SubType>
@@ -71,9 +78,6 @@
     <Compile Include="frmNouveauContact.Designer.cs">
       <DependentUpon>frmNouveauContact.cs</DependentUpon>
     </Compile>
-    <Compile Include="MyGroupBox.cs">
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="frmModifClient.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,8 +86,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="frmlistClient.resx">
+      <DependentUpon>frmlistClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmConsultationClient.resx">
       <DependentUpon>frmConsultationClient.cs</DependentUpon>
