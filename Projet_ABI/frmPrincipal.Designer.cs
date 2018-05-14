@@ -36,6 +36,8 @@
             this.nouveauClientToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listClientToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contactToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.affichageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.unTestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -57,7 +59,8 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.clientToolStripMenuItem1,
-            this.contactToolStripMenuItem});
+            this.contactToolStripMenuItem,
+            this.affichageToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -101,6 +104,20 @@
             this.contactToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
             this.contactToolStripMenuItem.Text = "aide";
             // 
+            // affichageToolStripMenuItem
+            // 
+            this.affichageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.unTestToolStripMenuItem});
+            this.affichageToolStripMenuItem.Name = "affichageToolStripMenuItem";
+            this.affichageToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
+            this.affichageToolStripMenuItem.Text = "affichage";
+            // 
+            // unTestToolStripMenuItem
+            // 
+            this.unTestToolStripMenuItem.Name = "unTestToolStripMenuItem";
+            this.unTestToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.unTestToolStripMenuItem.Text = "un test";
+            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -130,5 +147,7 @@
         private System.Windows.Forms.ToolStripMenuItem nouveauClientToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem contactToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listClientToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem affichageToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem unTestToolStripMenuItem;
     }
 }
